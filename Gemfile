@@ -37,6 +37,7 @@ gem 'jquery-rails'
 
 #gem 'bootstrap-sass'
 #gem 'font-awesome-rails'
+gem 'bootstrap', '~> 4.1.0'
 
 gem 'solidus'
 gem 'solidus_auth_devise'
