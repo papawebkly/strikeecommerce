@@ -1,0 +1,32 @@
+.logo{
+    margin-left: 39%;
+    width: 200px;
+    padding: 20px 0 0 0;
+}
+.b-menu_top_bar_container .b-main_menu{
+    padding-top: 0px;
+}
+.b-header_fixed .b-header_main {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 150px;
+}
+.b-our_service_text h3, h5, p{
+    color: white;
+    font-weight: lighter;
+}
+
+.b-our_service_text p{
+    margin-bottom:0px;
+}
+.full-width{
+    width:100%;
+}
+
+.carousel-item img{
+    width:100%;
+    height:100%;
+}

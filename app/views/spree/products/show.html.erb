@@ -1,0 +1,37 @@
+<%= render partial: 'spree/shared/secondary_header' %>
+
+<% cache [I18n.locale, current_pricing_options, @product] do %>
+<section class="product-single">
+  <% @body_id = 'product-details' %>
+  <div class="container" data-hook="product_show" itemtype="http://schema.org/Product">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-main-image">
+          <!--img src="images/720x490.png" alt=""-->
+          <%= render partial: 'image' %>
+        </div>
+        <%= render partial: 'thumbnails' %>
+      </div>
+      <div class="col-md-3" data-hook="product_center_part" style="margin-top:40px">
+        <div data-hook="product_center_part_wrap">
+          <div data-hook="product_properties" style="font-weight:normal">
+            <%= render partial: 'properties' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        <div class="product-details">
+          <h2 class="page-title product-name"><%= @product.name %></h2>
+          <p><%= product_description(@product) rescue t('spree.product_has_no_description') %></p>
+          <div id="cart-form" data-hook="cart_form">
+            <%= render partial: 'cart_form' %>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+
+<%= render partial: 'taxons' %>
+
+<% end %>

@@ -1,0 +1,23 @@
+<% if !@product.taxons.blank? %>
+  <section class="products-grid related-products no-padding-top">
+    <div class="container">
+      <div class="row products-container">
+        <% @product.taxons.each do |taxon| %>
+          <div class="col-md-4 col-sm-6 col-xs-12 product">
+            <div class="thumbnail" style="background-image: url(<%= taxon.icon.url %>);">
+              <div class="product-details text-center">
+                <div class="align-vertical">
+                  <!--h3><%#= link_to taxon.name, seo_url(taxon) %></h3-->
+                  <h3><%= taxon.name %></h3>
+                  <%= link_to seo_url(taxon), class: 'btn btn-primary' do %>
+                      <i class="fa fa-bars"></i> View
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+<% end %>

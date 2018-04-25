@@ -1,0 +1,12 @@
+<% size ||= :mini %>
+<% itemprop ||= nil %>
+
+<% if image && image.attachment? %>
+  <% if itemprop %>
+    <%= image_tag image.attachment(size), itemprop: itemprop, class: 'img-polaroid' %>
+  <% else %>
+    <%= image_tag image.attachment(size), class: 'img-polaroid' %>
+  <% end %>
+<% else %>
+  <span class="image-placeholder <%= size %>"></span>
+<% end %>
