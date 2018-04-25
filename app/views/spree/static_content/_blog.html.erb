@@ -1,140 +1,525 @@
-<div class="main-container">
-    <header class="secondary">
-        <div class="background-image-holder parallax-background overlay" data-stellar-background-ratio="0.9">
-            <%= image_tag "Flights.png", class:"background-image", alt:"Background Image" %>
+<div  class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery"> 
+  <div id="b-home_01_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+    <ul>  
+      <li data-index="rs-30" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="<%= image_url('back1.jpg') %>%"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> 
+        <%= image_tag 'back1.jpg',  alt: "", :"data-bgposition" => "center center", :"data-bgfit" => "cover", :"data-bgrepeat" => "no-repeat", :"data-bgparallax" => "10", class: "rev-slidebg" %>
+        <div class="tp-caption  tp-resizeme" 
+              data-x="['left','left','left','center']" 
+              data-hoffset="['250','250','50','0']" 
+              data-y="['top','top','top','top']" 
+              data-voffset="['200','200','200','100']" 
+              data-fontsize="['40','40','40','32']" 
+              data-width="none" 
+              data-height="none" 
+              data-whitespace="nowrap" 
+              data-type="text" 
+              data-responsive_offset="on" 
+              data-frames='[{"delay":500,"speed":700,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:-50px;opacity:0;","ease":"nothing"}]' data-textalign="['left','left','left','left']" 
+              data-paddingtop="[0,0,0,0]" 
+              data-paddingright="[0,0,0,0]" 
+              data-paddingbottom="[0,0,0,0]" 
+              data-paddingleft="[0,0,0,0]" 
+              style="font-size: 40px; line-height: 22px; font-family: 'Italianno'; color: #bc9c72; z-index: 999">
+              Shop & save today 
         </div>
-
-        <div class="container align-vertical hero">
-            <div class="row">
-                <div class="col-md-5 text-left">
-                    <h1>Our Blog</h1>
-                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
-                </div>
-            </div><!--end of row-->
-        </div><!--end of container-->
-    </header>
-
-    <section class="blog-list alternative">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12">
-                                <div class="thumbnail with-info">
-                                    <%= image_tag "720x490.png" %>
-                                    <div class="info">
-                                        <div class="align-vertical" style="padding-top: 13.25px;">
-                                            <span>16</span>
-                                            <span>July</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-offset-1">
-                                <div class="post-details">
-                                    <h2 class="page-title">Build a chair</h2>
-                                    <p>Suspendisse varius enim in eros elementum tris. Duis cursus, mi quis viverra ornare, eros dolor inter nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. </p>
-
-                                    <a href="#" class="btn btn-default">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 col-md-offset-1">
-                                <div class="thumbnail with-info">
-                                    <%= image_tag "720x490.png" %>
-                                    <div class="info">
-                                        <div class="align-vertical" style="padding-top: 13.25px;">
-                                            <span>16</span>
-                                            <span>July</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="post-details">
-                                    <h2 class="page-title">Chair & table</h2>
-                                    <p>Suspendisse varius enim in eros elementum tris. Duis cursus, mi quis viverra ornare, eros dolor inter nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. </p>
-
-                                    <a href="#" class="btn btn-default">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12">
-                                <div class="thumbnail with-info">
-                                    <%= image_tag "720x490.png" %>
-                                    <div class="info">
-                                        <div class="align-vertical" style="padding-top: 13.25px;">
-                                            <span>16</span>
-                                            <span>July</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-offset-1">
-                                <div class="post-details">
-                                    <h2 class="page-title">Model 2015</h2>
-                                    <p>Suspendisse varius enim in eros elementum tris. Duis cursus, mi quis viverra ornare, eros dolor inter nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. </p>
-
-                                    <a href="#" class="btn btn-default">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 col-md-offset-1">
-                                <div class="thumbnail with-info">
-                                    <%= image_tag "720x490.png" %>
-                                    <div class="info">
-                                        <div class="align-vertical" style="padding-top: 13.25px;">
-                                            <span>16</span>
-                                            <span>July</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="post-details">
-                                    <h2 class="page-title">Just art</h2>
-                                    <p>Suspendisse varius enim in eros elementum tris. Duis cursus, mi quis viverra ornare, eros dolor inter nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. </p>
-
-                                    <a href="#" class="btn btn-default">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-
-    <div class="no-padding-top section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="#" class="load-more"><i class="fa fa-ellipsis-h"></i></a>
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
+        <div class="tp-caption tp-resizeme"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['100','100','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['250','250','250','130']" 
+            data-fontsize="['54','54','54','40']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" 
+            style="font-family: Lora; color: #fff; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999">craft beer for all
+        </div> 
+        <div class="tp-caption tp-resizeme"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['200','20','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['310','310','310','180']" 
+            data-fontsize="['54','54','54','40']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" 
+            style="font-family: Lora; color: #fff; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999">
+        </div> 
+          <div class="tp-caption tp-resizeme text-lg-center"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['120','120','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['380','380','380','250']" 
+            data-fontsize="['16','16','16','16']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" 
+            style="font-family: Karla; color: #fff; z-index: 999">
+            <p>Vitae diam parturient eu vestibulum parturient nulla neque <br>eu vestibulum parturient nulla</p>
+        </div> 
+        <div class="tp-caption tp-resizeme font-title rs-parallaxlevel-1 hidden-xs-down" 
+              data-x="['right','right','right','center']" 
+              data-hoffset="['100','100','50','0']" 
+              data-y="['middle','middle','middle','center']" 
+              data-voffset="['0','0','0','0']" 
+              data-fontsize="['250','250','250','260']" 
+              data-width="none" 
+              data-height="none" 
+              data-whitespace="nowrap" 
+              data-type="text" 
+              data-responsive_offset="on" 
+              data-frames='[{"delay":650,"speed":700,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-50px;opacity:0;","ease":"nothing"}]' data-textalign="['left','left','left','left']" 
+              data-paddingtop="[0,0,0,0]" 
+              data-paddingright="[0,0,0,0]" 
+              data-paddingbottom="[0,0,0,0]" 
+              data-paddingleft="[0,0,0,0]">
+              <%= image_tag "slider/home-dark/dark-sld2.png", :"data-ww" => "['480px','300px','300px','250px']", style: "transform: matrix3d(0.990268, 0.139173, 0, 0, -0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" %>
+          </div> 
+          <div class="tp-caption tp-resizeme"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['250','230','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['450','450','450','300']" 
+            data-fontsize="['73','73','73','40']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" >
+            <a href="#" class="btn btn-line">LEARN MORE</a>
+        </div>   
+      </li>
+      <li data-index="rs-301" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="<%= image_url('back2.jpg') %>"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> 
+        <%= image_tag "back2.jpg",  alt: "",  :"data-bgposition" => "center center", :"data-bgfit" => "cover", :"data-bgrepeat" => "no-repeat", :"data-bgparallax" => "10", class: "rev-slidebg" %>
+        <div class="tp-caption  tp-resizeme" 
+              data-x="['left','left','left','center']" 
+              data-hoffset="['250','250','50','0']" 
+              data-y="['top','top','top','top']" 
+              data-voffset="['200','200','200','100']" 
+              data-fontsize="['40','40','40','32']" 
+              data-width="none" 
+              data-height="none" 
+              data-whitespace="nowrap" 
+              data-type="text" 
+              data-responsive_offset="on" 
+              data-frames='[{"delay":500,"speed":700,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:-50px;opacity:0;","ease":"nothing"}]' data-textalign="['left','left','left','left']" 
+              data-paddingtop="[0,0,0,0]" 
+              data-paddingright="[0,0,0,0]" 
+              data-paddingbottom="[0,0,0,0]" 
+              data-paddingleft="[0,0,0,0]" 
+              style="font-size: 40px; line-height: 22px; font-family: 'Italianno'; color: #bc9c72; z-index: 999">
+              Chanel flowerbomb 
+        </div>
+        <div class="tp-caption tp-resizeme"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['100','100','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['250','250','250','130']" 
+            data-fontsize="['54','54','54','40']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" 
+            style="font-family: Lora; color: #fff; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999">craft beer for all 
+        </div> 
+        <div class="tp-caption tp-resizeme"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['200','20','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['310','310','310','180']" 
+            data-fontsize="['54','54','54','40']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" 
+            style="font-family: Lora; color: #fff; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999">
+        </div> 
+          <div class="tp-caption tp-resizeme text-lg-center"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['120','120','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['380','380','380','250']" 
+            data-fontsize="['16','16','16','16']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" 
+            style="font-family: Karla; color: #fff; z-index: 999">
+            <p>Vitae diam parturient eu vestibulum parturient nulla neque <br>eu vestibulum parturient nulla</p>
+        </div> 
+        <div class="tp-caption tp-resizeme font-title rs-parallaxlevel-1 hidden-xs-down" 
+              data-x="['right','right','right','center']" 
+              data-hoffset="['100','100','50','0']" 
+              data-y="['middle','middle','middle','center']" 
+              data-voffset="['0','0','0','0']" 
+              data-fontsize="['250','250','250','260']" 
+              data-width="none" 
+              data-height="none" 
+              data-whitespace="nowrap" 
+              data-type="text" 
+              data-responsive_offset="on" 
+              data-frames='[{"delay":650,"speed":700,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-50px;opacity:0;","ease":"nothing"}]' data-textalign="['left','left','left','left']" 
+              data-paddingtop="[0,0,0,0]" 
+              data-paddingright="[0,0,0,0]" 
+              data-paddingbottom="[0,0,0,0]" 
+              data-paddingleft="[0,0,0,0]">
+              <%= image_tag "slider/home-dark/dark-sld1.png" %>
+          </div> 
+          <div class="tp-caption tp-resizeme"  
+            data-x="['left','left','left','center']" 
+            data-hoffset="['250','230','50','0']" 
+            data-y="['top','top','top','top']" 
+            data-voffset="['450','450','450','300']" 
+            data-fontsize="['73','73','73','40']" 
+            data-width="none" 
+            data-height="none" 
+            data-whitespace="nowrap" 
+            data-type="text" 
+            data-responsive_offset="on" 
+            data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" 
+            data-paddingtop="[0,0,0,0]" 
+            data-paddingright="[0,0,0,0]" 
+            data-paddingbottom="[0,0,0,0]" 
+            data-paddingleft="[0,0,0,0]" >
+            <a href="#" class="btn btn-line">BUY NOW</a>
+        </div>   
+      </li> 
+    </ul>
+    <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>  
+  </div>
+</div> 
+<div class="b-page_title b-page_title_default text-center">
+    <h1 class="b-entry_title"><span>Lifestyle</span></h1>  
+    <div class="b-breadcrumbs">
+        <%= link_to 'Home', root_path %>
+        <span>Blog</span>
     </div>
+</div> 
 
-</div><!-- /.main-container -->
+<section id="b-blog_default">
+    <div class="container">
+    <div class="row clearfix">
+        <div class="col-xl-9 col-lg-9 col-mb-8 col-sm-12 col-xs-12">
+        <div class="b-blog_default b-blog_grid b-blog_default_list">
+            <div class="b-blog_degault_single">
+                <div class="b-blog_single_header">
+                    <div class="b-blog_img_wrap">
+                        <a href="#">
+                            <%= image_tag "blog/home/blog_default_01.jpg", class: "img-fluid" %>
+                        </a>
+                    </div>
+                    <div class="b-post_time text-center">
+                        <span class="b-post_day">08</span>
+                        <span class="b-post_month">Aug</span>
+                    </div>
+                    <div class="b-post_categories">
+                        <div class="b-post_categorie_list">
+                        <a href="#" rel="category tag">Lifestyle</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="b-blog_single_info">
+                    <h3 class="b-entry_title">
+                        <a href="#" rel="bookmark">Venenatis veulum peus</a>
+                    </h3>
+                    <div class="b-author_info">
+                        <span class="b-author_name">
+                            By <a href="#" rel="author">V. Harrison</a>
+                        </span>
+                        <span class="b-reply">
+                            <a href="#">Leave a comment</a>
+                        </span>
+                    </div>
+                    <div class="b-blog_single_content">
+                        <p>Susp endisse ullam corper a adipiscing class ullam corper inceptos nisl consequat eros congue ullamcorper suspendisse a penatibus a varius. Montes a platea viva mus ridiculus consequat parturient parturient pretium nascetur at cras porta parturient scelerisque ad mollis at in vivamus risus. Euismod maecenas.</p>
+                    </div> 
+                </div>
+                <div class="b-read_more">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="b-blog_degault_single">
+                <div class="b-blog_single_header">
+                    <div class="b-blog_img_wrap">
+                        <a href="#">
+                            <%= image_tag "blog/home/blog_default_02.jpg", class: "img-fluid" %>
+                        </a>
+                    </div>
+                    <div class="b-post_time text-center">
+                        <span class="b-post_day">24</span>
+                        <span class="b-post_month">May</span>
+                    </div>
+                    <div class="b-post_categories">
+                        <div class="b-post_categorie_list">
+                        <a href="#" rel="category tag">Lifestyle</a>, 
+                        <a href="#" rel="category tag">Travel</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="b-blog_single_info">
+                    <h3 class="b-entry_title">
+                        <a href="#" rel="bookmark">Non vestibulum lacus sociosqu hac</a>
+                    </h3>
+                    <div class="b-author_info">
+                        <span class="b-author_name">
+                            By <a href="#" rel="author">V. Harrison</a>
+                        </span>
+                        <span class="b-reply">
+                            <a href="#">Leave a comment</a>
+                        </span>
+                    </div>
+                    <div class="b-blog_single_content">
+                        <p>Susp endisse ullam corper a adipiscing class ullam corper inceptos nisl consequat eros congue ullamcorper suspendisse a penatibus a varius. Montes a platea viva mus ridiculus consequat parturient parturient pretium nascetur at cras porta parturient scelerisque ad mollis at in vivamus risus. Euismod maecenas.</p>
+                    </div> 
+                </div>
+                <div class="b-read_more">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="b-blog_degault_single">
+                <div class="b-blog_single_header">
+                    <div class="b-blog_img_wrap">
+                        <a href="#">
+                            <%= image_tag "blog/home/blog_default_03.jpg", class: "img-fluid" %>
+                        </a>
+                    </div>
+                    <div class="b-post_time text-center">
+                        <span class="b-post_day">29</span>
+                        <span class="b-post_month">Jun</span>
+                    </div>
+                    <div class="b-post_categories">
+                        <div class="b-post_categorie_list">
+                        <a href="#" rel="category tag">Lifestyle</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="b-blog_single_info">
+                    <h3 class="b-entry_title">
+                        <a href="#" rel="bookmark">Leo placerat ac a dis</a>
+                    </h3>
+                    <div class="b-author_info">
+                        <span class="b-author_name">
+                            By <a href="#" rel="author">V. Harrison</a>
+                        </span>
+                        <span class="b-reply">
+                            <a href="#">Leave a comment</a>
+                        </span>
+                    </div>
+                    <div class="b-blog_single_content">
+                        <p>Susp endisse ullam corper a adipiscing class ullam corper inceptos nisl consequat eros congue ullamcorper suspendisse a penatibus a varius. Montes a platea viva mus ridiculus consequat parturient parturient pretium nascetur at cras porta parturient scelerisque ad mollis at in vivamus risus. Euismod maecenas.</p>
+                    </div> 
+                </div>
+                <div class="b-read_more">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="b-blog_degault_single">
+                <div class="b-blog_single_header">
+                    <div class="b-blog_img_wrap">
+                        <a href="#">
+                            <%= image_tag "blog/home/blog_default_04.jpg", class: "img-fluid" %>
+                        </a>
+                    </div>
+                    <div class="b-post_time text-center">
+                        <span class="b-post_day">17</span>
+                        <span class="b-post_month">Aug</span>
+                    </div>
+                    <div class="b-post_categories">
+                        <div class="b-post_categorie_list">
+                        <a href="#" rel="category tag">Lifestyle</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="b-blog_single_info">
+                    <h3 class="b-entry_title">
+                        <a href="#" rel="bookmark">Cum fames a cras dictumst</a>
+                    </h3>
+                    <div class="b-author_info">
+                        <span class="b-author_name">
+                            By <a href="#" rel="author">V. Harrison</a>
+                        </span>
+                        <span class="b-reply">
+                            <a href="#">Leave a comment</a>
+                        </span>
+                    </div>
+                    <div class="b-blog_single_content">
+                        <p>Susp endisse ullam corper a adipiscing class ullam corper inceptos nisl consequat eros congue ullamcorper suspendisse a penatibus a varius. Montes a platea viva mus ridiculus consequat parturient parturient pretium nascetur at cras porta parturient scelerisque ad mollis at in vivamus risus. Euismod maecenas.</p>
+                    </div> 
+                </div>
+                <div class="b-read_more">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        </div>  
+        <div class="col-xl-3 col-lg-3 col-mb-4 col-sm-12 col-xs-12">
+        <div class="b-sidebar">
+            <div class="b-sidebar_widget">
+            <h5 class="b-widget_title">CATEGORIES</h5>
+            <div class="b-sidenav">
+                <nav>  
+                <ul class="pl-0 mb-0 list-unstyled">
+                    <li><a href="#">Creative</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Travel</a></li>
+                </ul>
+                </nav>
+            </div>
+            </div>
+            <div class="b-sidebar_widget">
+            <h5 class="b-widget_title">RECENT POST</h5>
+            <div class="b-sidenav">
+                <nav>  
+                <ul class="pl-0 mb-0 list-unstyled b-recent_post">
+                    <li>
+                    <a href="#" class="b-recent_blog_img d-inline-block">
+                        <%= image_tag "blog/home/blog_recent_01.jpg", class: "img-fluid d-block" %>
+                    </a>
+                    <h3><a href="#">VENENATIS VEULUM PEUS</a></h3>
+                    <span>August 8, 2015</span>
+                    </li>
+                    <li>
+                    <a href="#" class="b-recent_blog_img d-inline-block">
+                        <%= image_tag "blog/home/blog_recent_02.jpg", class: "img-fluid d-block" %>
+                    </a>
+                    <h3><a href="#">HAC FAMES TEMPOR</a></h3>
+                    <span>August 8, 2015</span>
+                    </li>
+                    <li>
+                    <a href="#" class="b-recent_blog_img d-inline-block">
+                        <%= image_tag "blog/home/blog_recent_03.jpg", class: "img-fluid d-block" %>
+                    </a>
+                    <h3><a href="#">URNA LIGULA INCEPTOS</a></h3>
+                    <span>August 8, 2015</span>
+                    </li>
+                    <li>
+                    <a href="#" class="b-recent_blog_img d-inline-block">
+                        <%= image_tag "blog/home/blog_recent_04.jpg", class: "img-fluid d-block" %>
+                    </a>
+                    <h3><a href="#">DAPIBUS A AT GRAVIDA</a></h3>
+                    <span>August 8, 2015</span>
+                    </li>
+                    <li>
+                    <a href="#" class="b-recent_blog_img d-inline-block">
+                        <%= image_tag "blog/home/blog_recent_05.jpg", class: "img-fluid d-block" %>
+                    </a>
+                    <h3><a href="#">CONDINTUM INTELGER RIDIS</a></h3>
+                    <span>August 8, 2015</span>
+                    </li> 
+                </ul>
+                </nav>
+            </div>
+            </div>
+            <div class="b-sidebar_widget">
+            <h5 class="b-widget_title">OUR INSTAGRAM</h5>
+            <div class="b-instagram_feeds">
+                <ul class="b-instagram_pics list-inline">
+                    <li>
+                        <a href="#" target="_self"></a>
+                        <div class="wrapp-pics">
+                            <%= image_tag "instagram/home/default-instagramm-1.jpg", class: "img-fluid d-block" %>
+                            <div class="hover-mask"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self"></a>
+                        <div class="wrapp-pics">
+                            <%= image_tag "instagram/home/default-instagramm-2.jpg", class: "img-fluid d-block" %>
+                            <div class="hover-mask"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self"></a>
+                        <div class="wrapp-pics">
+                            <%= image_tag "instagram/home/default-instagramm-3.jpg", class: "img-fluid d-block" %>
+                            <div class="hover-mask"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self"></a>
+                        <div class="wrapp-pics">
+                            <%= image_tag "instagram/home/default-instagramm-4.jpg", class: "img-fluid d-block" %>
+                            <div class="hover-mask"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self"></a>
+                        <div class="wrapp-pics">
+                            <%= image_tag "instagram/home/default-instagramm-5.jpg", class:"img-fluid d-block" %>
+                            <div class="hover-mask"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_self"></a>
+                        <div class="wrapp-pics">
+                            <%= image_tag "instagram/home/default-instagramm-6.jpg", class: "img-fluid d-block" %>
+                            <div class="hover-mask"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>  
+            <div class="b-sidebar_widget">
+            <h5 class="b-widget_title">RECENT COMMENT</h5>
+            <div class="b-sidenav">
+                <nav>  
+                <ul class="pl-0 mb-0 list-unstyled b-recent_comment">
+                    <li><b>admin on </b><a href="#">Basic knit dress chest</a></li>
+                    <li><b>admin on </b><a href="#">Eingerless gloves in camel</a></li>
+                    <li><b>admin on </b><a href="#">Eingerless gloves in camel</a></li>
+                    <li><b>admin on </b><a href="#">Yolour Riche La Palette Nude</a></li> 
+                </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section> 
