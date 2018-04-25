@@ -12,10 +12,10 @@
 .debugtimeline.tl_frame .the_timeline_tester{background:#3498db}
 .debugtimline_txt{color:#fff;font-weight:400;font-size:7px;position:absolute;left:10px;top:0;white-space:nowrap;line-height:10px}
 .rtl{direction:rtl}
-@font-face{font-family:revicons;src:url(/assets/revicons/revicons.eot?5510888);src:url(/assets/revicons/revicons.eot?5510888#iefix) format('embedded-opentype'),
-url(/assets/revicons/revicons.woff?5510888) format('woff'),
-url(/assets/revicons/revicons.ttf?5510888) format('truetype'),
-url(/assets/revicons/revicons.svg?5510888#revicons) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:revicons;src:url(font-path('revicons.eot?5510888'));src:url(font-path('revicons.eot?5510888#iefix')) format('embedded-opentype'),
+url(font-path('revicons.woff?5510888')) format('woff'),
+url(font-path('revicons.ttf?5510888')) format('truetype'),
+url(font-path('revicons.svg?5510888#revicons')) format('svg');font-weight:400;font-style:normal}
 [class*=" revicon-"]:before,
 [class^=revicon-]:before{font-family:revicons;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em}
 .revicon-search-1:before{content:'\e802'}
