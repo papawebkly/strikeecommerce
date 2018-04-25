@@ -1,3 +1,10 @@
-@import "../../application.css";
+@import "spree/frontend/owl.carousel.min";
+@import "spree/frontend/owl.theme.default.min";
+@import "spree/frontend/settings";
+@import "spree/frontend/layers";
+@import "spree/frontend/navigation";
+@import "spree/frontend/main";
+@import "spree/frontend/colors/dark";
+
 @import "spree/frontend/devise";
 @import "spree/frontend/style";

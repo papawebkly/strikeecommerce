@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: gecko_production
-  username: gecko
-  password: <%= ENV['GECKO_DATABASE_PASSWORD'] %>
+  database: gecko_development
