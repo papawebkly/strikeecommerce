@@ -1,13 +1,21 @@
 <% unless @product_properties.empty? %>  
-  <!--h6 class="product-section-title"><%#= t('spree.properties')%></h6-->
-  <ul id="product-properties" class="list-group" data-hook>
-      <% @product_properties.each do |product_property| %>
-        <% css_class = cycle('even', 'odd', name: "properties") %>
-        <li class="<%= css_class %> list-group-item" style="border:0px; font-size:14px;">
-        <span class="badge"><%= product_property.value %></span>
-          <%= product_property.property.presentation %>
-        </li>
-      <% end %>
-      <% reset_cycle('properties') %>
-  </ul>
+  <ul class="pl-0 list-unstyled">
+    <li><a href="#"><i class="icon-heart icons"></i> Add to wishlist</a></li>
+    <li><a href="#"><i class="icon-refresh icons"></i> Compare</a></li>
+          <% @product_properties.each do |product_property| %>
+            <li><b><%= product_property.property.presentation %></b>: <%= product_property.value %></li>
+          <% end %>
+          <% reset_cycle('properties') %>
+    <li>
+        <b>Share</b>: 
+        <span class="b-share_product">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-envelope"></a>
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-pint"></a>
+        </span>
+    </li>
+</ul>
 <% end %>

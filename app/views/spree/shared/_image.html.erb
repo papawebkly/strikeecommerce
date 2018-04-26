@@ -3,9 +3,9 @@
 
 <% if image && image.attachment? %>
   <% if itemprop %>
-    <%= image_tag image.attachment(size), itemprop: itemprop, class: 'img-polaroid' %>
+    <%= image_tag image.attachment(size), itemprop: itemprop, class: 'img-fluid' %>
   <% else %>
-    <%= image_tag image.attachment(size), class: 'img-polaroid' %>
+    <%= image_tag image.attachment(size), class: 'img-fluid' %>
   <% end %>
 <% else %>
   <span class="image-placeholder <%= size %>"></span>
