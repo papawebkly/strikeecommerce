@@ -6,7 +6,7 @@
     </div>
 </div> 
 <% cache [I18n.locale, current_pricing_options, @product] do %>
-    <div class="b-product_single pb-5">
+    <div class="b-product_single pb-5 background-white-color">
         <% @body_id = 'product-details' %>
         <div class="container">
             <div class="row clearfix"> 
@@ -21,7 +21,7 @@
                             <span class="b-symbol">£</span>79.00</span>
                         </p>
                         <div class="b-produt_description">
-                            <p><%= product_description(@product) rescue t('spree.product_has_no_description') %></p>
+                            <p class="text-muted"><%= product_description(@product) rescue t('spree.product_has_no_description') %></p>
                         </div>
                         <div class="b-product_attr">
                             <div class="b-product_attr_single">
