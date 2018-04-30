@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180422024950) do
+ActiveRecord::Schema.define(version: 20180430194032) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -454,10 +454,12 @@ ActiveRecord::Schema.define(version: 20180422024950) do
     t.datetime "updated_at"
     t.boolean "promotionable", default: true
     t.string "meta_title"
+    t.integer "vendor_id"
     t.index ["available_on"], name: "index_spree_products_on_available_on"
     t.index ["deleted_at"], name: "index_spree_products_on_deleted_at"
     t.index ["name"], name: "index_spree_products_on_name"
     t.index ["slug"], name: "index_spree_products_on_slug", unique: true
+    t.index ["vendor_id"], name: "index_spree_products_on_vendor_id"
   end
 
   create_table "spree_products_taxons", id: :serial, force: :cascade do |t|
@@ -786,7 +788,9 @@ ActiveRecord::Schema.define(version: 20180422024950) do
     t.string "carrier"
     t.string "service_level"
     t.boolean "available_to_users", default: true
+    t.integer "vendor_id"
     t.index ["tax_category_id"], name: "index_spree_shipping_methods_on_tax_category_id"
+    t.index ["vendor_id"], name: "index_spree_shipping_methods_on_vendor_id"
   end
 
   create_table "spree_shipping_rate_taxes", id: :serial, force: :cascade do |t|
@@ -868,8 +872,10 @@ ActiveRecord::Schema.define(version: 20180422024950) do
     t.boolean "fulfillable", default: true, null: false
     t.string "code"
     t.boolean "check_stock_on_transfer", default: true
+    t.integer "vendor_id"
     t.index ["country_id"], name: "index_spree_stock_locations_on_country_id"
     t.index ["state_id"], name: "index_spree_stock_locations_on_state_id"
+    t.index ["vendor_id"], name: "index_spree_stock_locations_on_vendor_id"
   end
 
   create_table "spree_stock_movements", id: :serial, force: :cascade do |t|
@@ -960,8 +966,10 @@ ActiveRecord::Schema.define(version: 20180422024950) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string "cart_tax_country_iso"
+    t.integer "vendor_id"
     t.index ["code"], name: "index_spree_stores_on_code"
     t.index ["default"], name: "index_spree_stores_on_default"
+    t.index ["vendor_id"], name: "index_spree_stores_on_vendor_id"
   end
 
   create_table "spree_tax_categories", id: :serial, force: :cascade do |t|
@@ -1142,6 +1150,25 @@ ActiveRecord::Schema.define(version: 20180422024950) do
     t.index ["sku"], name: "index_spree_variants_on_sku"
     t.index ["tax_category_id"], name: "index_spree_variants_on_tax_category_id"
     t.index ["track_inventory"], name: "index_spree_variants_on_track_inventory"
+  end
+
+  create_table "spree_vendor_users", id: :serial, force: :cascade do |t|
+    t.integer "vendor_id"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_spree_vendor_users_on_user_id"
+    t.index ["vendor_id", "user_id"], name: "index_spree_vendor_users_on_vendor_id_and_user_id", unique: true
+    t.index ["vendor_id"], name: "index_spree_vendor_users_on_vendor_id"
+  end
+
+  create_table "spree_vendors", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string "state"
+    t.datetime "deleted_at"
+    t.index ["deleted_at"], name: "index_spree_vendors_on_deleted_at"
+    t.index ["name"], name: "index_spree_vendors_on_name", unique: true
+    t.index ["state"], name: "index_spree_vendors_on_state"
   end
 
   create_table "spree_wallet_payment_sources", id: :serial, force: :cascade do |t|
