@@ -89,7 +89,7 @@
                             <br> 
                         </div>
                         <br>
-                        <p><%= image_tag "payments.png" %></p>
+                        <p><%#= image_tag "payments.png" %></p>
                     </div>
                 </div>
             </div>
@@ -111,3 +111,17 @@
     </div>
     <!-- footer-bar -->
 </footer>
+<a href="javascript:;" id="b-scrollToTop" class="b-scrollToTop">
+    <span class="basel-tooltip-label">Scroll To Top</span>Scroll To Top
+</a>
+<div class="b-search_popup">
+    <form role="search" method="get" id="searchform" class="searchform  basel-ajax-search" action="#" data-thumbnail="1" data-price="1" data-count="3">
+        <div>
+        <label class="screen-reader-text" for="s"></label>
+        <input type="text" placeholder="Search for products" value="" name="s" id="s" autocomplete="off">
+        <input type="hidden" name="post_type" id="post_type" value="product">
+        <button type="submit" class="b-searchsubmit" id="b-searchsubmit">Search</button>
+        </div>
+    </form>
+<span class="b-close_search" id="b-close_search">close</span>
+</div>

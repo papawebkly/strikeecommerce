@@ -38,20 +38,20 @@
                             <div id="product_<%= product.id %>" class="b-product_grid_single">
                                 <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
                                     <div class="b-product_grid_header">
-                                        <a href="#">
-                                        <%= image_tag product.display_image.attachment(:large), :"data-src" => product.display_image.attachment(:large), class: "img-fluid img-switch d-block" %>
-                                        </a> 
-                                        <div class="b-product_grid_action">
-                                        <a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-                                            <i class="icon-heart icons b-add_to_whish">
-                                            <%= image_tag "products/product_loading.gif", class: "g-loading_gif" %>
-                                            </i>
-                                        </a>
-                                        <i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-                                            <i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-                                        </a>
-                                        </div>
+                                        <%= link_to url do %>
+                                            <%= image_tag product.display_image.attachment(:large), :"data-src" => product.display_image.attachment(:large), class: "img-fluid img-switch d-block" %>
+                                        <% end %>
+                                        <!--div class="b-product_grid_action">
+                                            <a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
+                                                <i class="icon-heart icons b-add_to_whish">
+                                                <%= image_tag "products/product_loading.gif", class: "g-loading_gif" %>
+                                                </i>
+                                            </a>
+                                            <i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
+                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
+                                                <i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
+                                            </a>
+                                        </div-->
                                     </div>
                                     <div class="b-product_grid_info">
                                         <h3 class="product-title">

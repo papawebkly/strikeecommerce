@@ -237,26 +237,29 @@
                         <i class="icon-magnifier icons"></i>
                         </a>
                     </div>
-                    <div class="b-wishlist_icon">
+                    <!--div class="b-wishlist_icon">
                         <a href="#" class="d-inline-block">
                         <i class="icon-heart icons"></i>
                         <span>0</span>
                         </a>
-                    </div>
-                    <div class="b-cart_basket pr-0">
-                        <a href="javascript:void(0);" id="b-mini_cart" class="d-inline-block">
-                        <i class="icon-basket icons"></i>
-                        <span class="b-cart_totals">
-                            <span class="b-cart_number">3</span>
-                            <span class="b-subtotal_divider">/</span> 
-                            <span class="b-cart_subtotal">
-                            <span class="b-cart_amount amount">
-                                <span class="b-cart_currency">£</span>100.00
+                    </div-->
+                    <% if (current_order != nil) then %>
+                        <div class="b-cart_basket pr-0">
+                            <%= link_to spree.cart_path, class: 'd-inline-block', id: 'b-mini_cart' do %>
+                            <i class="icon-basket icons"></i>
+                            <span class="b-cart_totals">
+                                <span class="b-cart_number"><%= current_order.item_count %></span>
+                                <span class="b-subtotal_divider">/</span> 
+                                <span class="b-cart_subtotal">
+                                <span class="b-cart_amount amount">
+                                    <span class="b-cart_currency"><%= current_order.display_total.to_html %></span>
+                                </span>
+                                </span>
                             </span>
-                            </span>
-                        </span>
-                        </a>
-                    </div>
+                            <% end %>
+                        </div>
+                    <% end %>
+
                     <div class="hidden-lg-up">
                         <i class="icon-menu icons b-nav_icon" id="b-nav_icon"></i>
                     </div>
