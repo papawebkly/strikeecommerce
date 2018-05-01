@@ -67,3 +67,17 @@
     line-height: 1em;
     color: #fff;
 }
+@media (max-width: 1065px) {
+    .hidden-main-menu-down {
+      display: none !important; } 
+}
+@media (min-width: 1065px)
+{
+    .hidden-menu-up {
+        display: none !important; 
+    }
+}
+.b-nav_icon
+{
+    color:white;
+}

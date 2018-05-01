@@ -42,6 +42,7 @@ gem 'bootstrap', '~> 4.1.0'
 gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_static_content', github: 'solidusio-contrib/solidus_static_content'
+gem 'solidus_multi_vendor', github: 'bevvinc/solidus_multi_vendor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -711,8 +711,8 @@ var App = (function(window){
         var sticky = $('body'),
             scroll = $(window).scrollTop();
 
-        if (scroll >= 250) sticky.addClass('b-header_fixed');
-        else sticky.removeClass('b-header_fixed');
+        //if (scroll >= 250) sticky.addClass('b-header_fixed');
+        //else sticky.removeClass('b-header_fixed');
       });
     },
 

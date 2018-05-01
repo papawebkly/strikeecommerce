@@ -3,7 +3,15 @@
 <% end %>
 
 <% @body_id = 'login' %>
-<div id="existing-customer" class="panel-body">
+<div class="b-page_title b-page_title_default text-center">
+    <h1 class="b-entry_title"><span>My Account</span></h1>  
+    <div class="b-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>My Account</span>
+    </div>
+</div> 
+
+<div id="existing-customer" class="panel-body background-white-color">
     <div class="alert alert-info panel-heading"><%= Spree.t(:login_as_existing) %></div>
     <div data-hook="login" class="panel-body">
         <%= render partial: 'spree/shared/login' %>

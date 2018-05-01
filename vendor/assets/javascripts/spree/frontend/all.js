@@ -8,3 +8,4 @@
 //= require jquery_ujs
 //= require spree/frontend
 //= require_tree .
+//= require spree/frontend/solidus_multi_vendor

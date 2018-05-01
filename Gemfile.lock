@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/bevvinc/solidus_multi_vendor.git
+  revision: 38b10bd68f0f94bb96af153e92df06da273ac296
+  specs:
+    solidus_multi_vendor (0.0.5.alpha)
+      solidus_core (>= 1.0, < 3)
+      solidus_support
+
+GIT
   remote: https://github.com/solidusio-contrib/solidus_static_content.git
   revision: 0ede9fed6f8e85cc271dc5c995bf1945a47f79aa
   specs:
@@ -363,6 +371,7 @@ DEPENDENCIES
   selenium-webdriver
   solidus
   solidus_auth_devise
+  solidus_multi_vendor!
   solidus_static_content!
   spring
   spring-watcher-listen (~> 2.0.0)

@@ -2,8 +2,15 @@
   <div class="flash errors"><%= flash[:alert] %></div>
 <% end %>
 
-<div class="row">
-  <div class="col-md-4 col-md-offset-4">
+<div class="b-page_title b-page_title_default text-center">
+    <h1 class="b-entry_title"><span>My Account</span></h1>  
+    <div class="b-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>My Account</span>
+    </div>
+</div> 
+
+<div class="background-white-color">
     <% @body_id = 'login' %>
     <div id="existing-customer">
       <h6 class="alert alert-info"><%= Spree.t(:login_as_existing) %></h6>
@@ -13,6 +20,4 @@
       </div>
     </div>
     <div data-hook="login_extras"></div>
-
-  </div>
 </div>
