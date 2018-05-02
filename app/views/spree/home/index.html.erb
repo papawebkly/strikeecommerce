@@ -130,15 +130,16 @@
             <h2 class="text-center">SAVE 70% OFF SALE</h2>
             <p class="text-center">Sign up with your email address to received news and updates.</p>
             <div class="b-newsletter_form">
-                <form action="#" class="clearfix">
-                    <div class="form-group float-left"> 
-                        <label>Email address: </label>
-                        <input name="email" placeholder="Your email address" required="" type="email"> 
-                    </div>  
-                    <div class="b-form_submit float-left">    
-                        <button class="b-submit">Sign up</button>
-                    </div>    
-                </form>
+
+                <%= form_tag('/signup', method: :get, class: 'clearfix') do %>
+                  <div class="form-group float-left"> 
+                      <label>Email address: </label>
+                      <input name="email" placeholder="Your email address" required="" type="email"> 
+                  </div>  
+                  <div class="b-form_submit float-left">  
+                      <%= submit_tag 'Sign up', class: 'b-submit' %>
+                  </div>   
+                <% end %>
             </div>
         </div>
     </div>

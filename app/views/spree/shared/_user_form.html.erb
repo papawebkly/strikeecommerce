@@ -1,6 +1,6 @@
 <div class="form-group">
   <%= f.label :email, Spree.t(:email) %><br />
-  <%= f.email_field :email, class: 'title form-control' %>
+  <%= f.email_field :email, class: 'title form-control', value: params[:email] %>
 </div>
 <div id="password-credentials">
   <div class="form-group">
