@@ -35,7 +35,9 @@
                                     </li> 
                                     <!-- Top level items -->
                                     <li class="b-has_sub b-dropdown_wrapper from-bottom p-static">
-                                        <a href="product-single.html" class="p-relative"><span class="top">ABOUT US</span></a>
+                                        <%= link_to "/about", class: "p-relative" do %>
+                                            <span class="top">ABOUT US</span>
+                                        <% end %>
                                     </li>
                                 </ul>
                             </div>

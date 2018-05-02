@@ -1,11 +1,4 @@
-<div class="b-page_title b-page_title_default text-center">
-    <h1 class="b-entry_title"><span>Products</span></h1>  
-    <div class="b-breadcrumbs">
-        <%= link_to 'Home', root_path %>
-        <span>Products</span>
-    </div>
-</div> 
-
+<%= render partial: 'spree/shared/secondary_header' %>
 <% content_for :sidebar do %>
   <div data-hook="homepage_sidebar_navigation">
     <% if "spree/products" == params[:controller] && @taxon %>

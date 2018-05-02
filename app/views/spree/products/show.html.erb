@@ -1,11 +1,4 @@
-<div class="b-page_title b-page_title_default text-center">
-    <h1 class="b-entry_title"><span>Product</span></h1>  
-    <div class="b-breadcrumbs">
-        <%= link_to 'Home', root_path %>
-        <span>Product</span>
-    </div>
-</div> 
-
+<%= render partial: 'spree/shared/secondary_header' %>
 <% cache [I18n.locale, current_pricing_options, @product] do %>
     <div class="b-product_single pb-5 background-white-color">
         <% @body_id = 'product-details' %>
