@@ -1,17 +1,26 @@
-<div class="form-group">
-  <%= f.label :email, Spree.t(:email) %><br />
-  <%= f.email_field :email, class: 'title form-control', value: params[:email] %>
-</div>
-<div id="password-credentials">
-  <div class="form-group">
-    <%= f.label :password, Spree.t(:password) %><br />
-    <%= f.password_field :password, class: 'title form-control' %>
-  </div>
+<section id="b-my_account">
+    <div class="container b-my_account">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
 
-  <div class="form-group">
-    <%= f.label :password_confirmation, Spree.t(:confirm_password) %><br />
-    <%= f.password_field :password_confirmation, class: 'title form-control' %>
-  </div>
-</div>
+              <div class="b-auth_section b-auth_register">
+                <h2><i class="icon-user icons"></i> Register</h2>
+                <div class="form-group">
+                  <label for="">Email address <span class="b-required">*</span></label>
+                  <%= f.email_field :email, value: params[:email] %>
+                </div>
+                <div class="form-group">
+                  <label for="">Password <span class="b-required">*</span></label>
+                  <%= f.password_field :password, class: 'title form-control' %>
+                </div>
 
+                <div class="form-group">
+                  <%= f.label :password_confirmation, Spree.t(:confirm_password) %><br />
+                  <%= f.password_field :password_confirmation, class: 'title form-control' %>
+                </div>
+              </div> 
+            </div> 
+        </div>
+    </div>
+</section> 
 <div data-hook="signup_below_password_fields"></div>

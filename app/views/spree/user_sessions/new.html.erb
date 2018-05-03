@@ -2,13 +2,7 @@
   <div class="flash errors"><%= flash[:alert] %></div>
 <% end %>
 
-<div class="b-page_title b-page_title_default text-center">
-    <h1 class="b-entry_title"><span>My Account</span></h1>  
-    <div class="b-breadcrumbs">
-        <a href="index.html">Home</a>
-        <span>My Account</span>
-    </div>
-</div> 
+<%= render partial: 'spree/shared/secondary_header' %>
 
 <div class="background-white-color">
     <% @body_id = 'login' %>

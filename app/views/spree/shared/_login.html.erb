@@ -5,20 +5,18 @@
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                 <div class="b-auth_section b-auth_login">
                     <h2><i class="icon-login icons"></i> Login</h2>
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="">Email address <span class="b-required">*</span></label>
-                            <%= f.email_field :email, tabindex: 1, autofocus: true %>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Password <span class="b-required">*</span></label>
-                            <%= f.password_field :password, tabindex: 2 %>
-                        </div>
-                        <div class="form-group clearfix">
-                            <label class="pull-left"><%= f.check_box :remember_me, tabindex: 3 %><%= f.label :remember_me, Spree.t(:remember_me) %></label>
-                        </div>
-                        <%= f.submit Spree.t(:login), class: 'btn', tabindex: 4 %>  
-                    </form>
+                    <div class="form-group">
+                        <label for="">Email address <span class="b-required">*</span></label>
+                        <%= f.email_field :email, tabindex: 1, autofocus: true %>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password <span class="b-required">*</span></label>
+                        <%= f.password_field :password, tabindex: 2 %>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label class="pull-left"><%= f.check_box :remember_me, tabindex: 3 %><%= f.label :remember_me, Spree.t(:remember_me) %></label>
+                    </div>
+                    <%= f.submit Spree.t(:login), class: 'btn', style: 'width: 60%;margin: auto;display: block;', tabindex: 4 %>  
                 </div>
             </div>   
         </div>
