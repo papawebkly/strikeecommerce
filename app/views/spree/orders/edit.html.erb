@@ -24,7 +24,7 @@
               </div>
               <hr>
               <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
-                <%= order_form.text_field :coupon_code, size: 10, placeholder: t('spree.coupon_code'), class: 'form-control overrid_coupon' %>
+                <%= order_form.text_field :coupon_code, size: 15, placeholder: t('spree.coupon_code'), class: 'form-control overrid_coupon' %>
                 <%= button_tag class: 'primary btn btn-success overrid_order_button', id: 'update-button' do %>
                   <%= t('spree.update') %>
                 <% end %>
