@@ -1,7 +1,7 @@
 <section id="b-my_account">
     <div class="container b-my_account">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
 
               <div class="b-auth_section b-auth_register">
                 <h2><i class="icon-user icons"></i> Register</h2>
@@ -18,8 +18,16 @@
                   <%= f.label :password_confirmation, Spree.t(:confirm_password) %><br />
                   <%= f.password_field :password_confirmation, class: 'title form-control' %>
                 </div>
+                <%= f.submit Spree.t(:create), class: 'btn btn-success btn-block', style: 'width: 30%;margin: auto;display: block;' %>
               </div> 
             </div> 
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+              <div class="b-auth_text text-center b-auth_text_login">
+                <h3>Login</h3>
+                <p class="text-muted">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+                <%= link_to Spree.t(:login_as_existing), spree.login_path, class: "btn" %>
+              </div>
+            </div>  
         </div>
     </div>
 </section> 
