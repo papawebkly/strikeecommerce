@@ -10,7 +10,8 @@
       </div>
       <% if Spree::Config[:allow_guest_checkout] %>
         <div id="guest_checkout" data-hook class="col-md-6">
-          <div class="col-md-8 col-md-offset-2">
+          <%= render partial: 'spree/shared/secondary_header' %>
+          <div class="col-md-8 col-md-offset-2 background-white-color">
             <div class="alert alert-info"><%= Spree.t(:guest_user_account) %></div>
               <% if flash[:registration_error] %>
                 <div class='flash error'><%= flash[:registration_error] %></div>
@@ -27,6 +28,5 @@
         </div>
       <% end %>
     </div>
-
-  </section>
 </div>
+</section>
