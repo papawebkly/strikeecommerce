@@ -59,7 +59,7 @@
                     </div-->
                     <% if (current_order != nil) then %>
                         <div class="b-cart_basket pr-0">
-                            <%= link_to spree.cart_path, class: 'd-inline-block', id: 'b-mini_cart' do %>
+                            <%= link_to spree.cart_path, class: 'd-inline-block' do %>
                             <i class="icon-basket icons"></i>
                             <span class="b-cart_totals">
                                 <span class="b-cart_number"><%= current_order.item_count %></span>
