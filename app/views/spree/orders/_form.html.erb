@@ -1,13 +1,13 @@
 <% order = order_form.object %>
 <%= render 'spree/shared/error_messages', target: order %>
-<table id="cart-detail" class="table table-striped container" data-hook style="color:#333">
+<table id="cart" class="table table-hover table-condensed">
   <thead>
     <tr data-hook="cart_items_headers">
-      <th class="cart-item-description-header" colspan="2"><%= t('spree.item') %></th>
-      <th class="cart-item-quantity-header"><%= t('spree.qty') %></th>
-      <th class="cart-item-price-header"><%= t('spree.price') %></th>
-      <th class="cart-item-total-header"><%= t('spree.total') %></th>
-      <th class="cart-item-delete-header"></th>
+      <th style="width:50%"><%= t('spree.item') %></th>
+      <th style="width:8%"><%= t('spree.qty') %></th>
+      <th style="width:10%"><%= t('spree.price') %></th>
+      <th style="width:22%" class="text-center"><%= t('spree.total') %></th>
+      <th style="width:10%"></th>
     </tr>
   </thead>
   <tbody id="line_items" data-hook>
@@ -16,17 +16,30 @@
       <td colspan="6"></td>
     </tr>
   </tbody>
-  <% if order.adjustments.nonzero.exists? || order.line_item_adjustments.nonzero.exists? || order.shipment_adjustments.nonzero.exists? || order.shipments.any? %>
-    <tr class="cart-subtotal">
-      <td colspan="4" align='right'><h5 style="padding:10px"><%= t('spree.cart_subtotal', count: order.line_items.sum(:quantity)) %></h5></th>
-      <td colspan><h5 style="padding:10px; color:#f57c00"><%= order.display_item_total %></h5></td>
-      <td></td>
+  
+  <tfoot> 
+    <% if order.adjustments.nonzero.exists? || order.line_item_adjustments.nonzero.exists? || order.shipment_adjustments.nonzero.exists? || order.shipments.any? %>
+      <tr >
+        <td colspan="4" align='right'><h5 style="padding:10px"><%= t('spree.cart_subtotal', count: order.line_items.sum(:quantity)) %></h5></th>
+        <td colspan><h5 style="padding:10px; color:#f57c00"><%= order.display_item_total %></h5></td>
+        <td></td>
+      </tr>
+      <%= render "spree/orders/adjustments" %>
+    <% end %>
+    <tr>
+      <td>
+        <%= link_to products_path, class: "btn btn-warning" do %>
+          <i class="fa fa-angle-left"></i> Continue Shopping
+        <% end %>
+      </td>
+      <td colspan="2" class="hidden-xs"></td>
+      <td class="hidden-xs text-center"><strong><%= t('spree.total') %> <%= order.display_total %></strong></td>
+      <td>
+        <%= button_tag class: 'btn btn-success btn-block', id: 'checkout-link', name: 'checkout' do %>
+                  <%= t('spree.checkout') %> <i class="fa fa-angle-right"></i>
+        <% end %>
+      </td>
     </tr>
-    <%= render "spree/orders/adjustments" %>
-  <% end %>
-  <tr class="cart-total">
-    <td colspan="4" align='right'><h5 style="padding:10px"><%= t('spree.total') %></h5></th>
-    <td colspan><h5 style="padding:10px; color:#f57c00"><%= order.display_total %></h5></td>
-    <td></td>
-  </tr>
+  </tfoot>
+
 </table>
