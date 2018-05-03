@@ -1,6 +1,6 @@
 <% variant = line_item.variant -%>
 <%= order_form.fields_for :line_items, line_item do |item_form| -%>
-  <tr>
+  <tr class="<%= cycle('', 'alt') %> line-item product customed-font-normal">
     <td data-th="Product" data-hook="cart_item_image">
       <div class="row">
         <div class="col-sm-2 hidden-xs">
@@ -32,7 +32,7 @@
       <%= line_item.display_amount.to_html unless line_item.quantity.nil? %>
     </td>
     <td class="actions" data-th="" data-hook="cart_item_delete">
-      <%= link_to '#', class: 'btn btn-danger btn-sm', id: "delete_#{dom_id(line_item)}" do %>
+      <%= link_to '#', class: 'btn btn-danger btn-sm delete customed_delete_image', id: "delete_#{dom_id(line_item)}" do %>
         <i class="fa fa-trash-o"></i>
       <% end %>
     </td>
